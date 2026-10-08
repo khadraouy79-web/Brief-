@@ -582,3 +582,9 @@ article.carte.carte-programme
     gap: 24px;
   }
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+.container {
+    background-color: lightgreen;
+  }
+}
