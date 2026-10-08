@@ -14,12 +14,27 @@ body {
 }
 .container {
     width: 80%;
-    margin: 50px auto;
+    margin: 25px auto;
+    border-style: solid;
+    border-color: #0a7ed1;
+    background: #fff;
+    border-radius: 5px;
+    text-align:center;
+    box-shadow: 0 0px 50px #0a7ed1;
 }
 .contact-box{
     background: #fff;
     display: flex;
-    border-radius: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #0a7ed1;
+    box-shadow: 0 0px 50px #0a7ed1;
+
+}
+.container-box{
+     width: 80%;
+    margin: 50px auto;
+    
 }
 .contact_left{
     flex-basis: 60%;
@@ -29,7 +44,7 @@ body {
     flex-basis: 40%;
     padding: 40px;
     background: #10b7ea;
-    color: #fff;
+    color: #030000;
     border-radius: 10px;
    
 }
@@ -38,6 +53,7 @@ h1{
 }
 .container p{
     margin-bottom: 40px;
+    
 }
 .input-row{
     display: flex;
@@ -93,10 +109,16 @@ button:hover {
     color: #0a7ed1;
     font-weight: 600;
     margin-bottom: 30px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(4, 4, 149);
+    padding-bottom: 5px;
 }
 .contact_right h3{
     font-weight: 600;
     margin-bottom: 30px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(4, 4, 149);
+    padding-bottom: 5px;
 }
 
 tr td:first-child{
@@ -105,13 +127,35 @@ tr td:first-child{
 tr td{
     padding-top: 20px;
 }
-.contact_right h3 {
-       display: inline-block;
-    border-bottom: 2px solid rgb(4, 4, 149);
-    padding-bottom: 5px;
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-left, 
+  .contact-right {
+    width: 100%;
+  }
 }
-.contact_left h3 {
-    display: inline-block;
-    border-bottom: 2px solid rgb(4, 4, 149);
-    padding-bottom: 5px;
+
+
+@media (max-width: 992px) {
+  .hero-contenu,
+  .apropos-contenu,
+  .cartes,
+  .valeurs {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+.container {
+    background-color: lightgreen;
+  }
 }
