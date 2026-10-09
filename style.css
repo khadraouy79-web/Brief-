@@ -10,7 +10,10 @@ html {
 
 body {
   background-image: url(img/vecteezy_transform-your-designs-with-stunning-gradient-wave_48206956.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
   font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -590,3 +593,99 @@ article.carte.carte-programme
     background-color: lightgreen;
   }
 }
+/* Header */
+.en-tete {
+width: 100%;
+padding: 12px 0;
+box-sizing: border-box;
+}
+
+.conteneur {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.en-tete-contenu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+}
+
+/* Logo */
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+text-decoration: none;
+font-size: 24px;
+font-weight: bold;
+white-space: nowrap;
+}
+
+.logo img {
+width: 65px;
+height: 65px;
+object-fit: contain;
+}
+
+
+.menu {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 25px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu a {
+text-decoration: none;
+font-size: 16px;
+}
+
+/* Tablettes et téléphones */
+@media (max-width: 768px) {
+.en-tete-contenu {
+flex-direction: column;
+gap: 15px;
+}
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu {
+    gap: 12px 18px;
+}
+
+.menu a {
+    font-size: 14px;
+}
+
+
+@media (max-width: 400px) {
+.conteneur {
+width: 95%;
+}
+}
+
+.menu {
+    gap: 10px 14px;
+}
+
+.menu a {
+    font-size: 13px;
+}
+
+
+
